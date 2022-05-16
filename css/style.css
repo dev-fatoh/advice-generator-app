@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Manrope:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+:root{
+    --LightCyan-color:hsl(193,38%,86%);
+    --NeonGreen-color:hsl(150, 100%, 66%);
+    --DarkGrayishBlue-color: hsl(217, 19%, 24%);
+    --GrayishBlue-color: hsl(217, 19%, 38%);
+    --DarkBlue-color: hsl(218, 23%, 16%);
+    
+}
+html{
+    font-family: "Manrope",Sans-Serif;
+    font-size: 28px;
+}
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkBlue-color);
+    padding: 1rem;
+}
+.container{
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--DarkGrayishBlue-color);
+    position: relative;
+    
+    border-radius: 5px;
+    
+
+}
+.d-card{
+    padding: 1rem ;
+}
+.d-card h1{
+    text-align: center;
+    font-size: .4rem;
+    color: var(--NeonGreen-color) ;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.advic{
+    font-size: .8rem;
+    font-weight: 800;
+    font-family: "Manrope",Sans-Serif;
+    color: var(--LightCyan-color);
+  
+    padding: 1rem 0;
+    text-align: center;
+}
+.divider{
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.d-card button{
+    position: absolute;
+    bottom: -25px;
+    right: calc(50% - 25px);
+    height: 50px;
+    width: 50px;
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--NeonGreen-color);
+    transition: all .5s;
+}
+.d-card button:hover{
+    box-shadow: 1px 2px 25px var(--NeonGreen-color);
+}
